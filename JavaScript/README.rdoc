@@ -1,0 +1,32 @@
+== ToyProjects
+
+This is my programming playground and I use this for experimenting with 
+new tricks, packages, modules, gems and improving my coding skills on 
+daily basis. 
+
+== Dependencies
+
+* Perl
+* Python
+* Ruby & jRuby
+* Mongo
+* R
+* jQuery
+* neo4j
+
+
+
+== Help & Documentation
+For more information about installing, running and configuring ToyProjects
+including a list of known issues and troubleshooting information, 
+refer to: http://wiki.github.com/abhishektiwari/ToyProjects/
+
+== Directory Hierarchy
+See the DirTree.txt
+
+
+== Authors and copyright
+© 2010 Abhishek Tiwari (abhishek@abhishek-tiwari.com)
+
+The software included in this package is copyrighted freeware
+distributed under the terms and conditions as specified in file LICENSE.
