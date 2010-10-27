@@ -18,12 +18,16 @@
 |   |   |-- libcloud1.py
 |   |   |-- libcloud2.py
 |   |   `-- rackspace_deploy_ssh.py
+|   |-- Plotting
+|   |   `-- csv2plot.py
 |   |-- PyMongo
 |   |-- README.rdoc
 |   `-- Twitter
+|       |-- twitter_oauth.py
+|       `-- twitt_from_cmd.py
 |-- R
 |   `-- README.rdoc
 |-- README.rdoc
 `-- Ruby
 
-13 directories, 13 files
+14 directories, 16 files

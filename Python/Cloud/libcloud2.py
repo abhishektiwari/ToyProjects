@@ -2,8 +2,8 @@
 >>> from libcloud.providers import get_driver 
 >>> from libcloud.deployment import MultiStepDeployment, ScriptDeployment, SSHKeyDeployment
 >>> import os 
->>> RACKSPACE_USER = 'abhishektiwari'
->>> RACKSPACE_KEY  = 'e41af176c84fdf9f28441848b5e0b563'
+>>> RACKSPACE_USER = 'username'
+>>> RACKSPACE_KEY  = 'key'
 >>> Driver = get_driver(Provider.RACKSPACE)
 >>> conn = Driver(RACKSPACE_USER, RACKSPACE_KEY)
 >>> sd = SSHKeyDeployment(open(os.path.expanduser("~/.ssh/id_rsa.pub")).read())  
