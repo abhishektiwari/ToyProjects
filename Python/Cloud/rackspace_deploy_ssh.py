@@ -16,6 +16,8 @@ import paramiko, socket
 
 port = 22
 keypath = os.path.expanduser("~/.ssh/id_rsa.pub")
+RACKSPACE_USER = 'user' 
+RACKSPACE_KEY = 'key'
 
 def run_on_node(host, user, cmd, password=None):
     ssh = paramiko.SSHClient()
@@ -55,22 +57,22 @@ def _is_host_up(host, port):
 if __name__ == "__main__":
     Driver = get_driver(Provider.RACKSPACE)
     print "Connecting to Rackspace..."
-    conn = Driver('xxx', 'yyy')
+    conn = Driver(RACKSPACE_USER, RACKSPACE_KEY)
     images = conn.list_images()
     sizes = conn.list_sizes()
     
     # Some clouds can deploy keys using the following libcloud functionality
-    #sd = SSHKeyDeployment(open(os.path.expanduser("~/.ssh/id_rsa.pub")).read())
-    #node = conn.deploy_node(name='test', image=images[0], size=sizes[0], deploy=sd)
+    # sd = SSHKeyDeployment(open(os.path.expanduser("~/.ssh/id_rsa.pub")).read())
+    # node = conn.deploy_node(name='test', image=images[0], size=sizes[0], deploy=sd)
     
     ## CREATE NODE ##
-    nodename = "test2"
+    nodename = "test"
     print 'Creating new node "%s"...' % nodename
-    node = conn.create_node(name=nodename, image=images[0], size=sizes[0])
-    print "Node parameters:"
-    d = node.__dict__
-    for field in d: print field + ": " + d[field]
-    print "Node features dict:"
+    node = conn.create_node(name=nodename, image=images[1], size=sizes[0])
+    # print "Node parameters:"
+    # d = node.__dict__
+    # for field in d: print field + ": " + d[field]
+    # print "Node features dict:"
     print conn.features
     
     ## Wait until node comes online ##
