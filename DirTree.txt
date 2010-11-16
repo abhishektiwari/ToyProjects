@@ -8,7 +8,11 @@
 |-- Mongo
 |   `-- README.rdoc
 |-- neo4j
+|-- Node.js
+|   `-- hello.js
 |-- Perl
+|   `-- Web
+|       `-- biomap.pl
 |-- Python
 |   |-- BioRelated
 |   |   |-- eutils
@@ -23,10 +27,16 @@
 |   |   |-- libcloud1.py
 |   |   |-- libcloud2.py
 |   |   `-- rackspace_deploy_ssh.py
+|   |-- JSON
+|   |   `-- citeulike_json.py
 |   |-- Plotting
 |   |   `-- csv2plot.py
 |   |-- PyMongo
 |   |-- README.rdoc
+|   |-- Sphinx_Ext
+|   |   |-- citelinks.py
+|   |   |-- citeulike.py
+|   |   `-- mathjax.py
 |   |-- Twisted
 |   |   |-- search.py
 |   |   `-- server.py
@@ -34,8 +44,9 @@
 |       |-- twitter_oauth.py
 |       `-- twitt_from_cmd.py
 |-- R
+|   |-- ggplot.R
 |   `-- README.rdoc
 |-- README.rdoc
 `-- Ruby
 
-17 directories, 21 files
+21 directories, 28 files
