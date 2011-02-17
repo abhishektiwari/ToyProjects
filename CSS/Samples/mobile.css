@@ -1,0 +1,821 @@
+/* -----------------------------------
+Site:       Max Design
+CSS author: Russ Weakley
+Updated:   	Today is 30/01/10. It is now 8:11 AM
+Updated by: Russ Weakley
+----------------------------------- */
+
+#banner-container,
+.profile img,
+#extras-services,
+.screenshot img,
+.workshop-dates,
+.workshop-image,
+#sidebar,
+#footer-details,
+#footer-contact,
+#footer-follow,
+form#cformsform,
+ol.commentlist,
+form#commentform,
+.screenshot,
+.workshop-presenter { display: none; }
+
+/* -----------------------------------
+general
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font: 300%/1.4 helvetica, arial, sans-serif;
+	color: #444;
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0 0 .5em;
+	line-height: 1.1;
+	color: #003d5d;
+}
+
+h1 { font-size: 100%; }
+h2 { font-size: 162.5%; }
+h3 { font-size: 137.5%; }
+h4 { font-size: 118.75%; }
+h5 { font-size: 112.5%; }
+p { margin: 0 0 1em; }
+img { border: none; }
+a:link { color: #035389; }
+a:visited { color: #09619C; }
+
+a:focus
+{
+	color: #fff;
+	background: #000;
+}
+
+a:hover { color: #000; }
+
+a:active
+{
+	color: #cc0000;
+	background: #fff;
+}
+
+ul
+{
+	margin: 1em 0 1.5em;
+	padding: 0;
+}
+
+ul li
+{
+	margin: 0;
+	padding: 2px 0 3px 25px;
+	list-style-type: none;
+	background: url(../images/arrow.gif) no-repeat 0 .3em;
+}
+
+#content dl
+{
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 1em 0;
+}
+
+#content dl dt
+{
+	float: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-weight: bold;
+	text-align: left;
+}
+
+#content dl dd
+{
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+table
+{
+	margin: 1em 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table caption
+{
+	text-align: left;
+	font-weight: bold;
+	padding: 0 0 5px;
+	text-transform: uppercase;
+	color: #236271;
+}
+
+table td, table th
+{
+	text-align: left;
+	border: 1px solid #b1d2e4;
+	padding: 5px 10px;
+	vertical-align: top;
+}
+
+table th { background: #ecf7fd; }
+
+blockquote
+{
+	background: #ecf7fd;
+	margin: 1em 0;
+	padding: 1.5em;
+}
+
+blockquote p { margin: 0; }
+
+blockquote p.source
+{
+	margin: 1em 0 0;
+	font-size: 87.5%;
+	padding: 2px 0 5px 25px;
+	background: url(../images/icon-tweet.gif) no-repeat;
+}
+
+code
+{
+	background: #ecf7fd;
+	font: 110% courier, monaco, monospace;
+	margin: 0 .3em;
+}
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+
+/* -----------------------------------
+classes
+----------------------------------- */
+
+.structural
+{
+	position: absolute;
+	left: -500em;
+	color: #000;
+	background: #fff;
+}
+
+.date
+{
+	margin: 0 0 1em;
+	font-style: normal;
+	color: #585858;
+	font-size: 87.5%;
+}
+
+p.date { margin: 2em 0; }
+
+p.intro
+{
+	font-size: 112.5%;
+	padding: 0;
+}
+
+pre.codesample
+{
+	background: #444;
+	color: #fff;
+	margin: 1em 0;
+	padding: 1.5em;
+	overflow: auto;
+}
+
+.codesample code
+{
+	background: none;
+	line-height: 1;
+	margin: 0;
+}
+
+.venue-details { font-size: 68.75%; }
+
+p.entry
+{
+	background: url(../images/arrow.gif) no-repeat 0 .3em;
+	padding: 0 0 0 25px;
+}
+
+p.entry a
+{
+	font-weight: bold;
+	font-size: 112.5%;
+}
+
+/* -----------------------------------
+structure
+----------------------------------- */
+
+#header-container
+{
+	float: left;
+	width: 100%;
+	background: none;
+}
+
+#header
+{
+	margin: 0 auto;
+	width: auto;
+}
+
+#header2
+{
+	float: left;
+	width: 100%;
+	padding-top: 0;
+	background: none;
+}
+
+#header2 h1
+{
+	position: static;
+	left: 0;
+	margin: 0;
+	padding: .3em 1em .2em;
+}
+
+#header2 h1 img
+{
+	width: 500px;
+}
+
+/* -----------------------------------
+skiplinks
+----------------------------------- */
+
+#skiplinks a
+{
+	position: static;
+	left: 0;
+	display: block;
+	color: #fff;
+	background: #00386a;
+	font-weight: bold;
+	padding: .7em 1em;
+	text-decoration: none;
+	border-top: 1px solid #fff;
+	font-size: 112.5%;
+}
+
+#skiplinks a:hover
+{
+	display: block;
+	color: #003d5d;
+	background: #d5f1f9;
+}
+
+/* -----------------------------------
+navigation
+----------------------------------- */
+
+#navigation
+{
+	float: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 112.5%;
+	border-bottom: 1px solid #fff;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#navigation ul li a
+{
+	float: none;
+	display: block;
+	color: #fff;
+	background: #00386a;
+	font-weight: bold;
+	padding: .7em 1em;
+	margin: 0;
+	text-decoration: none;
+	border-top: 1px solid #fff;
+}
+
+#navigation ul li a span
+{
+	display: inline;
+	background: none;
+}
+
+#navigation ul li a span span
+{
+	display: inline;
+	background: none;
+}
+
+#navigation ul li a span span span
+{
+	display: inline;
+	padding: 0;
+	background: none;
+}
+
+.home #navigation ul li#home-nav a,
+.page-id-547 #navigation ul li#about-nav a,
+.page-id-562 #navigation ul li#about-nav a,
+.page-id-552 #navigation ul li#about-nav a,
+.page-id-560 #navigation ul li#about-nav a,
+.page-id-555 #navigation ul li#about-nav a,
+.page-id-775 #navigation ul li#articles-nav a,
+.parent-pageid-775 #navigation ul li#articles-nav a,
+.page-id-570 #navigation ul li#services-nav a,
+.page-id-589 #navigation ul li#sites-nav a,
+.page-id-773 #navigation ul li#training-nav a,
+.page-id-614 #navigation ul li#workshops-nav a,
+.single #navigation ul li#news-nav a,
+.archive #navigation ul li#news-nav a
+{
+	padding: .5em 1em;
+	background: #6e9800;
+}
+
+.home #navigation ul li#home-nav a span,
+.page-id-547 #navigation ul li#about-nav a span,
+.page-id-562 #navigation ul li#about-nav a span,
+.page-id-552 #navigation ul li#about-nav a span,
+.page-id-560 #navigation ul li#about-nav a span,
+.page-id-555 #navigation ul li#about-nav a span,
+.page-id-775 #navigation ul li#articles-nav a span,
+.parent-pageid-775 #navigation ul li#articles-nav a span,
+.page-id-570 #navigation ul li#services-nav a span,
+.page-id-589 #navigation ul li#sites-nav a span,
+.page-id-773 #navigation ul li#training-nav a span,
+.page-id-614 #navigation ul li#workshops-nav a span,
+.single #navigation ul li#news-nav a span,
+.archive #navigation ul li#news-nav a span
+{
+	display: inline;
+	background: none;
+}
+
+.home #navigation ul li#home-nav a span span,
+.page-id-547 #navigation ul li#about-nav a span span,
+.page-id-562 #navigation ul li#about-nav a span span,
+.page-id-552 #navigation ul li#about-nav a span span,
+.page-id-560 #navigation ul li#about-nav a span span,
+.page-id-555 #navigation ul li#about-nav a span span,
+.page-id-775 #navigation ul li#articles-nav a span span,
+.parent-pageid-775 #navigation ul li#articles-nav a span span,
+.page-id-570 #navigation ul li#services-nav a span span,
+.page-id-589 #navigation ul li#sites-nav a span span,
+.page-id-773 #navigation ul li#training-nav a span span,
+.page-id-614 #navigation ul li#workshops-nav a span span,
+.single #navigation ul li#news-nav a span span,
+.archive #navigation ul li#news-nav a span span
+{
+	display: inline;
+	background: none;
+}
+
+.home #navigation ul li#home-nav a span span span,
+.page-id-547 #navigation ul li#about-nav a span span span,
+.page-id-562 #navigation ul li#about-nav a span span span,
+.page-id-552 #navigation ul li#about-nav a span span span,
+.page-id-560 #navigation ul li#about-nav a span span span,
+.page-id-555 #navigation ul li#about-nav a span span span,
+.page-id-775 #navigation ul li#articles-nav a span span span,
+.parent-pageid-775 #navigation ul li#articles-nav a span span span,
+.page-id-570 #navigation ul li#services-nav a span span span,
+.page-id-589 #navigation ul li#sites-nav a span span span,
+.page-id-773 #navigation ul li#training-nav a span span span,
+.page-id-614 #navigation ul li#workshops-nav a span span span,
+.single #navigation ul li#news-nav a span span span,
+.archive #navigation ul li#news-nav a span span span
+{
+	display: inline;
+	padding: 0;
+	background: none;
+}
+
+#navigation ul li a:hover
+{
+	color: #003d5d;
+	background: #d5f1f9;
+}
+
+.home #navigation ul li#home-nav a:hover,
+.page-id-547 #navigation ul li#about-nav a:hover,
+.page-id-562 #navigation ul li#about-nav a:hover,
+.page-id-552 #navigation ul li#about-nav a:hover,
+.page-id-560 #navigation ul li#about-nav a:hover,
+.page-id-555 #navigation ul li#about-nav a:hover,
+.page-id-775 #navigation ul li#articles-nav :hover,
+.parent-pageid-775 #navigation ul li#articles-nav a:hover,
+.page-id-570 #navigation ul li#services-nav a:hover,
+.page-id-589 #navigation ul li#sites-nav a:hover,
+.page-id-773 #navigation ul li#training-nav a:hover,
+.page-id-614 #navigation ul li#workshops-nav a:hover,
+.single #navigation ul li#news-nav a:hover,
+.archive #navigation ul li#news-nav a:hover
+{
+	color: #003d5d;
+	background: #d5f1f9;
+}
+
+/* -----------------------------------
+home
+----------------------------------- */
+
+#home-workshop-container
+{
+	clear: left;
+	width: 100%;
+	background: none;
+}
+
+#home-workshop
+{
+	margin: 0;
+	padding: 1em;
+	width: auto;
+	background: none;
+}
+
+#home-workshop h2
+{
+	padding: 0;
+	margin: 0 0 .5em;
+	font-size: 162.5%;
+}
+
+#home-workshop h3
+{
+	padding: 0;
+	margin: 0 0 .5em;
+	font-size: 118.75%;
+}
+
+#home-workshop p
+{
+	margin: 0 0 1em;
+	padding: 0;
+	font-size: 100%;
+}
+
+#home-workshop p img { display: block; }
+
+/* -----------------------------------
+home-news
+----------------------------------- */
+
+#home-news-container
+{
+	clear: left;
+	width: 100%;
+	background: #fff;
+}
+
+#home-news
+{
+	margin: 0;
+	padding: 0 1em 1em;
+	width: auto;
+}
+
+#home-news h2 { font-size: 162.5%; }
+
+#home-news h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 118.75%;
+}
+
+#home-news ul
+{
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+#home-news ul li
+{
+	margin: 0 0 1.2em;
+	padding: 0 0 0 25px;
+	list-style-type: none;
+	background: url(../images/arrow.gif) no-repeat 0 .2em;
+}
+
+#home-news p { margin: 0; }
+
+#latestnews
+{
+	float: none;
+	width: auto;
+	padding: 0;
+}
+
+#recentarticles
+{
+	float: none;
+	width: auto;
+	padding: 0;
+}
+
+/* -----------------------------------
+content
+----------------------------------- */
+
+#content-container
+{
+	clear: left;
+	width: 100%;
+	height: auto;
+	padding: 1em 0;
+	background: url(../images/background-content.jpg) repeat-x;
+}
+
+#content
+{
+	margin: 0 auto;
+	width: auto;
+	padding: 0 1em;
+}
+
+#content h3 { margin: 1em 0; }
+
+/* -----------------------------------
+about
+----------------------------------- */
+
+#extras-about
+{
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+#main-about
+{
+	float: none;
+	width: auto;
+	padding: 0;
+}
+
+.profile
+{
+	float: none;
+	width: auto;
+	padding: 0;
+	text-align: left;
+	background: none;
+	font-size: 100%;
+}
+
+.profile img { float: right; }
+
+.profile p
+{
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+.profile p a { font-weight: bold; }
+.profile:hover { background: none; }
+.page-id-562 .profile-russ, .page-id-552 .profile-anna, .page-id-560 .profile-roger, .page-id-555 .profile-david { background: none; }
+
+/* -----------------------------------
+services
+----------------------------------- */
+
+#main-services
+{
+	float: none;
+	width: auto;
+	padding: 0;
+}
+
+/* -----------------------------------
+sites
+----------------------------------- */
+
+#main-sites
+{
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#main-sites p.intro
+{
+	width: auto;
+	padding: 0;
+}
+
+.site-entry
+{
+	float: none;
+	width: auto;
+	padding: 0;
+	font-size: 100%;
+}
+
+.site-info
+{
+	border-top: 3px solid #b1d2e4;
+	margin: 1.5em 0 0;
+	padding: 1.5em 0 0;
+	float: none;
+	width: auto;
+}
+
+#content .site-info dl
+{
+	clear: left;
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#content .site-info dl dt
+{
+	float: none;
+	clear: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-weight: bold;
+	border-top: none;
+}
+
+#content .site-info dl dd
+{
+	margin: 0 0 1em;
+	padding: 0;
+	border-top: none;
+}
+
+.site-info p
+{
+	clear: left;
+	margin: 0;
+	padding: 0;
+	border-top: none;
+}
+
+/* -----------------------------------
+workshops
+----------------------------------- */
+
+#main-workshops
+{
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.workshop-day
+{
+	background: url(../images/background-workshop-day.jpg) repeat-x;
+	margin: 1.5em 0 0;
+	padding: 1em;
+}
+
+#content .workshop-day h3
+{
+	margin: 0 0 .6em;
+	font-size: 137.5%;
+	padding: 0;
+}
+
+.workshop-dates
+{
+	background: url(../images/background-workshop-day.jpg) repeat-x;
+	margin: 1.5em 0;
+	padding: 1.5em;
+}
+
+#content .workshop-dates h3
+{
+	margin: 0 0 .6em;
+	font-size: 137.5%;
+	padding: 0;
+}
+
+/* -----------------------------------
+articles
+----------------------------------- */
+
+#main-articles
+{
+	clear: left;
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* -----------------------------------
+single
+----------------------------------- */
+
+#main
+{
+	float: none;
+	width: auto;
+	padding: 0;
+}
+
+#main h2 { padding: 0; }
+#main p.intro { padding: 0; }
+
+#main .post-navigation
+{
+	padding: 2em 0;
+	float: left;
+	width: 100%;
+}
+
+#main .post-navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#main .post-navigation li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: none;
+}
+
+#main .post-navigation li.previous
+{
+	float: left;
+	width: 107px;
+}
+
+#main .post-navigation li.next
+{
+	float: right;
+	width: 81px;
+}
+
+#main .post-navigation img { display: block; }
+
+/* -----------------------------------
+footer
+----------------------------------- */
+
+#footer-container
+{
+	width: 100%;
+	clear: both;
+	background: #ecf7fd;
+}
+
+#footer
+{
+	width: auto;
+	padding: 1em;
+}
+
+#footer-general ul
+{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#footer-general li
+{
+	padding: 0;
+	list-style-type: none;
+	display: inline;
+	margin: 0 .5em 0 0;
+}
