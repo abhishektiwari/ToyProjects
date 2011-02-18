@@ -1,0 +1,15 @@
+On R console Run,
+
+>sapply(list.files( pattern="\\.R$", ignore.case=TRUE, full.names=TRUE), source)
+># Creating object of class type
+> x1 <- myclass(1, 5)
+> x2 <- myclass(2, 6)
+> c(x1, x2)
+[1] 1 2
+attr(,"class")
+[1] "myclass" "myclass"
+attr(,"n")
+[1] 5 6
+> c(x1, x2)[2]
+[1] 2
+
